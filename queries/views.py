@@ -37,10 +37,7 @@ def query(request):
         #     fail_silently=False
         # )
 
-        # send_mail('Property Enquiry',
-        # 'There is client for you','vasthav2000@gmail.com',
-        # recipient_list=['vasthav1729@gmail.com'],fail_silently=False
-        # )
+        
 
         messages.success(request,'Your request has been submitted successfully ,a realtor will get back to you soon')
         return redirect('/listings/'+listing_id)
