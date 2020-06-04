@@ -29,13 +29,13 @@ def query(request):
 
         #send email
 
-        send_mail(
-            'Property Listing Enquiry',
-            'Hey there,' + '\n'+ 'There has been a inquiry for '+listing + 'from ' + name +'. Sign into the admin panel for more info',
-            from_email='vasthav2000@gmail.com',
-            recipient_list= [realtor_email,'vasthav1729@gmail.com'],
-            fail_silently=False
-        )
+        # send_mail(
+        #     'Property Listing Enquiry',
+        #     'Hey there,' + '\n'+ 'There has been a inquiry for '+listing + 'from ' + name +'. Sign into the admin panel for more info',
+        #     from_email='vasthav2000@gmail.com',
+        #     recipient_list= [realtor_email,'vasthav1729@gmail.com'],
+        #     fail_silently=False
+        # )
 
         # send_mail('Property Enquiry',
         # 'There is client for you','vasthav2000@gmail.com',
